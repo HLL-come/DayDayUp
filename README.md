@@ -1,5 +1,3 @@
-# home
-
 # Learning, share
 
 👋 Hi, I’m @HLL-come
