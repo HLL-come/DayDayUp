@@ -19,3 +19,9 @@ print("{0}, {1}, {2}".format(a,b,c))
 
 # for i in xteam:
 #     print(i)
+
+s1 = "I like this girl"
+
+for i in range(len(s1)):
+    print(end= s1[i].lower())
+
