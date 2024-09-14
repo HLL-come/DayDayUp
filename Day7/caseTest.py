@@ -13,18 +13,21 @@ dbg.print('Hello from Python API')
 
 # sleep(2)
 
-dbg.cmd('Sys.CPU S32G274A-M7')
-dbg.cmd('Sys.up')
+# dbg.cmd('Sys.CPU S32G274A-M7')
+# dbg.cmd('Sys.up')
 
-if dbg.fnc.system_up():
-    dbg.print('Up Successfully!')
+#if dbg.fnc.system_up():
+#    dbg.print('Up Successfully!')
 
-dbg.cmd(r'CD ~~\demo\arm\hardware\s32g2\s32g-vnp-evb\s32g-vnp-evb-m7')
-dbg.cmd('data.load.elf sieve_ram_thumb_ii_v7m.elf')
+#dbg.cmd(r'CD ~~\demo\arm\hardware\s32g2\s32g-vnp-evb\s32g-vnp-evb-m7')
+#dbg.cmd('data.load.elf sieve_ram_thumb_ii_v7m.elf')
 
+#dbg.cmm('/Users/helinglin/t32_202402/demo/arm/compiler/arm/cortexm.cmm')
+dbg.cmd('DO /Users/helinglin/t32_202402/demo/arm/compiler/arm/cortexm.cmm')
 
+#dbg.cmm('DO /Users/helinglin/t32_202402/demo/arm/compiler/arm/cortexm.cmm', timeout=30)
 # dbg.cmm(r'CD ~~\T32_new\demo\arm\flash\s32g274-cm7-qspi.cmm', timeout=30)
-
+#dbg.cmd('List')
 
 dbg.cmd('Data.Dump ANC:0x80000')
 addr1 = dbg.address(access='ANC', value=0x80000)
